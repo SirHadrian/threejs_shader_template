@@ -1,0 +1,11 @@
+version: '3'
+services:
+  threejs-template:
+    image: threejs-template:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/app
